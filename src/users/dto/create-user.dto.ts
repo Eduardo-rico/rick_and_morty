@@ -1,7 +1,7 @@
-import { Roles } from '../entities/user.entity';
+import { Role } from 'src/auth/models/role.model';
 
 export class CreateUserDto {
   username: string;
   password: string;
-  role?: Roles = Roles.summer;
+  role?: Role = Role.SUMMER;
 }
